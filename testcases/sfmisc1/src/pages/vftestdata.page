@@ -1,0 +1,19 @@
+<apex:page controller="VFTestDataController" action="{!onstart}">
+<apex:form>
+<div>
+errors:
+    <apex:pageMessages />
+</div>
+
+<div>
+    outmsg: {!outmsg}
+</div>
+
+<div>
+badfield:
+<apex:inputText id="badfield" value="{!badfield}" />
+<apex:commandLink action="{!dochanges}" value="dochanges" id="dochanges" />
+</div>
+</apex:form>
+
+</apex:page>

@@ -1,0 +1,22 @@
+<apex:page controller="ContactEditController">
+	<apex:form>
+		<apex:pageBlock title="Contact Edit" mode="edit">
+		    <apex:pageBlockSection columns="1">
+                <apex:inputField value="{!contact.id}" />
+                <apex:inputField value="{!contact.firstname}" />
+                <apex:inputField value="{!contact.lastname}" />
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Activate" action="{!activate}"/>
+                <apex:commandButton value="Do Set" action="{!doSet}" />
+                <apex:commandButton value="Suggest" action="{!suggest}" />
+            </apex:pageBlockButtons>
+		</apex:pageBlock>
+		<apex:inputText id="badtype" value="{!badtype}" />
+		<apex:commandLink action="{!typestuff}" value="typestuff" id="typestuff" />
+	
+	</apex:form>
+	<div id="output">
+	{!outputtxt}
+	</div>
+</apex:page>

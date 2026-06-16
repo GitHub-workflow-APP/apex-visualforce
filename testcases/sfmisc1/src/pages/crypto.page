@@ -1,0 +1,39 @@
+<apex:page controller="CryptoController" action="{!init}">
+<apex:form>
+<div>
+input: <apex:inputText id="plaintext" value="{!plaintext}" />
+<apex:commandLink action="{!submit}" value="submit" id="submit" />
+<apex:commandLink action="{!badivs}" value="badivs" id="badivs" />
+<div>
+output1: {!output1}
+</div>
+<div>
+output2: {!output2}
+</div>
+<div>
+output3: {!output3}
+</div>
+<div>
+output4: {!output4}
+</div>
+<div>
+output5: {!output5}
+</div>
+<div>
+output6: {!output6}
+</div>
+<div>
+output7: {!output7}
+</div>
+<div>
+output8: {!output8}
+</div>
+<div>
+output9: {!output9}
+</div>
+<div>
+output10: {!output10}
+</div>
+</div>
+</apex:form>
+</apex:page>

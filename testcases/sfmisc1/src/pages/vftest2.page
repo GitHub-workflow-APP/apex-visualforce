@@ -1,0 +1,23 @@
+<apex:page controller="VFTest2Controller">
+	<h2>vftest2</h2>
+    <apex:form>
+    <div>
+        <div>bad1: <apex:inputText id="bad1" value="{!bad1}" /></div>
+    </div>
+    <div>
+        <apex:commandLink action="{!runcmd1}" value="runcmd1" id="runcmd1" />
+    </div>
+	<div>
+		outval: {!outval}
+		
+	</div>
+
+    <div>
+        actionFunction: 
+        <apex:outputLink id="outputlink" value="javascript:void(0)" onclick="mySillyFunction('Oil')" styleClass="btn">outputlink</apex:outputLink>
+        <apex:actionFunction action="{!runcmd2}" name="mySillyFunction">
+            <apex:param name="first" assignTo="{!something}" value="" />
+        </apex:actionFunction>
+    </div>
+    </apex:form>
+</apex:page>

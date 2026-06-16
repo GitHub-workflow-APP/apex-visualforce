@@ -1,0 +1,41 @@
+<apex:page controller="Vf1Test">
+  vala: {!valA}
+  <div>
+  valb: {!valB}
+  
+  </div>
+  <div>
+  inputa: <apex:outputText value="{!inputa}" escape="false"/>
+  </div>
+  This is your new Page
+  <div>
+  <apex:form >
+  	<apex:pageMessages />
+  	<apex:pageBlock >
+  		<div>bad1:	
+	  	<apex:inputText id="bad1" value="{!bad1}" />
+	  	<apex:commandButton action="{!save}" value="Save"/>
+	  	</div>
+	  	<div>
+	  		badSearch: <apex:inputText id="bad2" value="{!bad1}" />
+	  		<apex:commandButton action="{!badSearch}" value="Search"/>
+	  	</div>
+	  	<div>
+	  		badSearch2: <apex:inputText id="bad3" value="{!bad3}" />
+	  		<div> <apex:commandButton action="{!badSearch2}" value="badSearch2"/> </div>
+	  		<div> <apex:commandButton action="{!badSearch3}" value="badSearch3"/> </div>
+	  		<div> <apex:commandButton action="{!goodSearch}" value="goodSearch"/> </div>
+	  		<div> <apex:commandButton action="{!goodSearch2}" value="goodSearch2"/> </div>
+	  		<div> <apex:commandButton action="{!goodSearch3}" value="goodSearch3"/> </div>
+	  		<div> <apex:commandButton action="{!stringDataflow}" value="stringDataflow"/> </div>
+	  		<div> <apex:commandButton action="{!stringDataflow2}" value="stringDataflow2"/> </div>
+	  		<div> <apex:commandButton action="{!weirdQueries}" value="weirdQueries"/> </div>
+	  	</div>
+  	</apex:pageBlock>
+  </apex:form>
+  </div>
+  <div>
+  search results:
+  <div>basic: {!basic}</div>
+  </div>
+</apex:page>
